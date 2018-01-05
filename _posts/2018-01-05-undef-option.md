@@ -5,7 +5,9 @@ date       : 2018-01-04
 author      : "pshung"
 ---
 >-u symbol
+>
 --undefined=symbol
+>
 Force symbol to be entered in the output file as an undefined symbol. Doing this may, for example, trigger linking of additional modules from standard libraries. `-u' may be repeated with different option arguments to enter additional undefined symbols.
 
 # Real Case in Newlib
