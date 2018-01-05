@@ -38,9 +38,6 @@ void foo() {
 
 ```
 ar -cvq libfoo.a foo.o
-gcc printf.c -o printf
-gcc printf.c libfoo.a -Wl,-ufoo -o printf
-gcc printf.c libfoo.a  -o printf
 gcc printf.c libfoo.a  -o printf_withoutU
 gcc printf.c libfoo.a -Wl,-ufoo -o printfWithU
 ./printf_withoutU
