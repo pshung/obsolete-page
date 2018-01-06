@@ -1,6 +1,6 @@
 ---
 layout	: page
-title		: "Use case of linker's -u option"
+title		: "[Linker] Use case of linker's -u option"
 date       : 2018-01-04
 author      : "pshung"
 ---
