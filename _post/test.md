@@ -44,6 +44,6 @@ author      : “pshung”</h2>
 </ul>
 <h3 id="summary">Summary</h3>
 <p>Foodies, a word used to descible someone who has strong intereset in food, including prepration, buying, and cooking.<br>
-I think my wife is so-called foodie, because she loves eating, cooking and studing of ingredents. She buys a lot of cooking books and watches a lot of TV show about cooking.<br>
+I think my wife is a foodie, because she loves eating, cooking and studing of ingredents. She buys a lot of cooking books and watches a lot of TV show about cooking.<br>
 She cooks for my family almost everyday and prepares the meal box for me. Though, she is a bit romantic, she is incapable of controling  the expense well.</p>
 
