@@ -4,6 +4,10 @@ title		: "perfect forwarding"
 date       : 2018-03-23
 author      : "pshung"
 ---
+
+This article explains the perfect forwarding techniquie introduced in c++11.
+Look at the example below.
+
 ```c++
 class Foo {
 public:
@@ -23,8 +27,8 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 ```
-compile with option -fno-elide-constructors to disable constructor optimization.
-Output:
+Compile with option -fno-elide-constructors to disable [copy-elision](https://en.wikipedia.org/wiki/Copy_elision) optimization, or you are not able to see the calling of copy constructor.
+```sh
 Foo ctor
 Foo copy ctor
 Foo dtor
@@ -32,10 +36,11 @@ Foo copy ctor
 foo
 Foo dtor
 Foo dtor
-
+```
 
 Copy may introduce a significant overhead if Foo contains huge memory
-resource. Move semantic is introduced to solve this in c++11.
+resource. 
+Thus, move semantic is introduced to solve this in c++11.
 
 ```c++
 class Foo {
@@ -57,7 +62,7 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 ```
-Output:
+```sh
 Foo ctor
 Foo move ctor
 Foo dtor
@@ -65,6 +70,8 @@ Foo move ctor
 foo
 Foo dtor
 Foo dtor
+```
+If a class has a move constructor, the temporary variable of rvalue type will be called instead of the copy constructor.
 
 Now, let's consider an usual case in template function, it forwards its
 template parameter to another function and the type of the parameter donesn't
@@ -90,6 +97,7 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 ```
+```sh
 Foo ctor
 Foo copy ctor
 Foo dtor
@@ -97,7 +105,7 @@ Foo copy ctor
 foo
 Foo dtor
 Foo dtor
-
+```sh
 
 The problem is "Can we pass the parameter to the receiver function without overhead?".
 
