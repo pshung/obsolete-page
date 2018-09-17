@@ -7,3 +7,5 @@ author  : "pshung"
 
 
 # Set up proxy server
+Environment variables: http_proxy, https_proxy, ftp_proxy  
+[Reference:](https://wiki.archlinux.org/index.php/proxy_settings)
