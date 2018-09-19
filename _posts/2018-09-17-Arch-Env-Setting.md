@@ -17,3 +17,8 @@ Environment variables: http_proxy, https_proxy, ftp_proxy
 
 # Desktop Environment (LXDE)
 [Reference:](https://wiki.archlinux.org/index.php/LXDE)
+
+# Pacman mirror server
+/etc/pacman.d/mirrorlist  
+Enable Taiwan mirror  
+[Available arch linux ARM mirror list](https://archlinuxarm.org/about/mirrors)  
