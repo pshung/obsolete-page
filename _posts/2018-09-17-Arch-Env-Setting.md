@@ -22,3 +22,8 @@ Environment variables: http_proxy, https_proxy, ftp_proxy
 /etc/pacman.d/mirrorlist  
 Enable Taiwan mirror  
 [Available arch linux ARM mirror list](https://archlinuxarm.org/about/mirrors)  
+
+
+# Pacman command
+search data base with a keyword.  
+> pacman -Ss keyword
