@@ -27,3 +27,9 @@ Enable Taiwan mirror
 # Pacman command
 search data base with a keyword.  
 > pacman -Ss keyword
+View information of installed package
+> pacman -Si keyword
+search installed package with a keyword  
+> pacman -Qs keyword
+View information of installed package
+> pac -Qi keyword
