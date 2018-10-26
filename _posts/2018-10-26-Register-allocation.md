@@ -10,12 +10,12 @@ Assigning infinite virtual registers into limited number of physical registers, 
 N-colorable map problem is a NP-compete problem.
 
 # Term:
-**Program point**: a point between two instructions.  
-A variable(V) is **alive** at a program point(P) if there is an instruction after P using variable V.  
-**Live range** of variable V: a collection of program points which V is alive.
-**Live interval**: the longest path in live range of variable V.
-**Coalescing**: if two variables are related by a move instructions and their live ranges doesn't overlap. Allocator can assign the same register to both variables and eleminate the move instruction. This technique merges the live range of two variables and forms a longer live range; thus, it may incur more register spills.
-**Live range spliting**: the inverse of coalescing, by adding a move instruction and rename the name of variable, it can split a long live interval into two smaller live intervals. 
+**Program point**: a point between two instructions.   
+A variable(V) is **alive** at a program point(P) if there is an instruction after P using variable V.   
+**Live range** of variable V: a collection of program points which V is alive.  
+**Live interval**: the longest path in live range of variable V.  
+**Coalescing**: if two variables are related by a move instructions and their live ranges doesn't overlap. Allocator can assign the same register to both variables and eleminate the move instruction. This technique merges the live range of two variables and forms a longer live range; thus, it may incur more register spills.  
+**Live range spliting**: the inverse of coalescing, by adding a move instruction and rename the name of variable, it can split a long live interval into two smaller live intervals.   
 
 
 
